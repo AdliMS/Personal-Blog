@@ -140,6 +140,11 @@ main #content article {
     padding: 2rem;
 }
 
+main #content article section {
+    margin-block: 2rem;
+    margin-left: 4rem;
+}
+
 /* MAIN-ASIDE */
 main aside {
     /* border: solid red 0.2rem; */
