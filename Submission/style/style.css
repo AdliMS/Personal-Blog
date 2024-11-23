@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    max-width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #fafafa;
+    color: #526E48;
+
+    /* border: solid black 0.2rem; */
+}
+
+body {
+    /* background-color: red; */
+    /* border: solid yellow 0.2rem; */
+    height: 100%;
+    width: 100%;
+ 
+    background-color:  #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+/* HEADER */
+.navbar-header {
+    background-color: #fafafa;
+
+    position: sticky;
+    top: 0;
+}
+
+.navbar-header nav {
+    /* border: solid black 0.2rem; */
+    
+    box-shadow: 0 2px 24px lightgray;
+    width: 100%;
+    height: 6rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-header nav h1 {
+    font-size: 2rem;
+}
+
+.navbar-header nav ul {
+    
+    display: flex;
+    list-style-type: none;
+    gap: 0.7rem;
+}
+
+.navbar-header nav ul li a {
+    text-decoration: none;
+    padding: 0rem 1.2rem ;
+    
+    transition: all 0.13s ease-in-out;
+}
+
+.navbar-header nav ul li a:hover {
+    padding: 0.7rem 1.2rem ;
+    border-radius: 0.5rem;
+    background-color: rgb(62, 100, 126);
+    font-weight: 600;
+    width: 300px;
+}
+
+/* MAIN */
+main {
+    /* border: solid yellow 0.2rem;  */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-inline: 4rem;
+    /* margin-block: 110px; */
+ 
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+/* MAIN-CONTENT */
+main #content {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    border-radius: 0.5rem;
+    padding: 4rem;
+    /* padding-block: 4rem; */
+    
+    box-shadow: 2px 2px 24px rgb(236, 236, 236);
+}
+
+main #content .first-letter:first-letter {
+    font-size: 2rem;
+}
+
+main #content article img {
+    /* border: solid yellow 0.2rem; */
+    width: 100%;
+    margin-block: 2rem;
+}
+
+main #content article .main-header {
+    border-bottom: dashed black 1px;
+    padding-bottom: 2rem;
+}
+
+main #content article .main-header p {
+    color: gray;
+    
+}
+
+main #content article .main-header .main-title {
+    /* border: solid yellow 0.2rem;  */
+    font-size: 4rem;
+    /* margin-block: 0; */
+    font-weight: 600;
+}
+
+main #content article h2 {
+    font-size:2rem;
+}
+
+main #content p {
+    font-size: 1.1rem;
+}
+
+main #content article .main-header .main-desc{
+    font-size: 1.1rem;
+}
+
+main #content article {
+    padding: 2rem;
+}
+
+/* MAIN-ASIDE */
+main aside {
+    /* border: solid red 0.2rem; */
+    width: 25%;
+    max-height: fit-content;
+    padding: 2rem;
+    /* background-image: linear-gradient(rgb(238, 238, 238), white) ; */
+    background-color: #fafafa;
+
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    box-shadow: 2px 2px 24px rgb(236, 236, 236);
+
+}
+
+/* main aside div {
+    width: 100%;
+    height: 20%;
+    border-radius:  0.5rem 0.5rem 0 0;
+    background-color: black;
+} */
+
+main aside img {
+    /* max-height: 30vh; */
+    /* border: solid yellow 0.2rem; */
+    width: 156px;
+    border-radius: 100%;
+    /* margin-bottom: 2rem; */
+
+    align-self: center;
+}
+
+main aside section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+main aside section .job-desk{
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 300 ;
+}
+
+main aside section h3 {
+    font-size: 1.8rem;
+    font-weight: 500 ;
+}
+
+main aside h3 + p {
+    font-size:small;
+    text-align: center;
+}
+
+main aside .my-quotes {
+    font-size:small;
+    text-align: center;
+}
+
+/* main aside .my-quotes p::before,
+main aside .my-quotes p::after {
+    content: '"';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+} */
+
+main aside section ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    
+}
+
+main aside section ul img {
+    width: 24px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color:  #fafafa;
+
+    box-shadow: 2px 0px 24px rgb(236, 236, 236);
+
+}
