@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 
     <!-- Google Fonts | Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,36 +14,30 @@
 <body>
     
     <header class="navbar-header">
-
         <nav>
-
-            <h1 class="nav-title">Blog saya</h1>
+            <h1>Blog saya</h1>
 
             <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
         <div id="content">
 
-            <article >
+            <header class="main-header">
+                <h1 class="main-title">Listrik: Pengertian dan Cara Kerja</h1>
+                <p class="main-desc">22 November, 2024 &middot; Sains</p>
+            </header>
 
-                <header class="main-header">
-                    <h1 class="main-title">Listrik: Pengertian dan Cara Kerja</h1>
-                    <p class="main-desc">22 November, 2024 &middot; Sains</p>
-                    
-                </header>
-                
-                <img class="electricity-img" src="img/electricity.jpg" alt="">
-                <p class="first-letter"><strong>Listrik</strong> merupakan hal yang umum dan melekat di berbagai aktivitas kita karena merupakan sumber energi utama dalam berbagai peralatan. Lampu sebagai penerangan, telefon yang merupakan media komunikasi jarak jauh, kipas dan <i>air condioner</i> yang membantu mendinginkan ruangan, dan lain sebagainya merupakan beberapa contoh dari alat yang melekat di keseharian manusia, yang dimana sangat membutuhkan listrik sebagai sumber dayanya. Tanpa arus listrik yang dibutuhkan, semua peralatan tadi akan kurang atau bahkan tidak bisa sama sekali berfungsi untuk memenuhi dan menunjang berbagai kebutuhan kita. </p>
+            <article>
+                <img class="electricity-img" src="assets/img/electricity.jpg" alt="">
+                <p class="first-letter">Listrik merupakan hal yang umum dan melekat di berbagai aktivitas kita karena merupakan sumber energi utama dalam berbagai peralatan. Lampu sebagai penerangan, telefon yang merupakan media komunikasi jarak jauh, kipas dan <i>air condioner</i> yang membantu mendinginkan ruangan, dan lain sebagainya merupakan beberapa contoh dari alat yang melekat di keseharian manusia, yang dimana sangat membutuhkan listrik sebagai sumber dayanya. Tanpa arus listrik yang dibutuhkan, semua peralatan tadi akan kurang atau bahkan tidak bisa sama sekali berfungsi untuk memenuhi dan menunjang berbagai kebutuhan kita. </p>
                 <br>
-                <p>Tapi apakah kalian tahu bagaimana listrik bekerja? nah, disini saya akan menjelaskan tentang apa itu listrik dan bagaimana listrik bisa menghidupkan berbagai perangkat tadi. Namun sebelumnya, kita perlu membahas atau setidaknya kembali me-<em>refresh</em> ingatan tentang partikel terkecil yang menyusun semua materi di sekitar kita, <strong><em>atom!</em></strong></p>
-
+                <p>Tapi apakah kalian tahu bagaimana listrik bekerja? nah, disini saya akan menjelaskan tentang apa itu listrik. Namun sebelumnya, kita perlu membahas atau setidaknya kembali me-<em>refresh</em> ingatan tentang partikel terkecil yang menyusun semua materi di sekitar kita, <strong><em>atom!</em></strong></p>
             </article>
             <article>
                 <h2>Apa itu Atom?</h2>
@@ -73,22 +67,52 @@
 
             <article>
                 <h2>Tegangan, Arus, dan Hambatan</h2>
-                <br>
-                <p>Tegangan, arus, dan hambatan merupakan elemen-elemen yang terdapat ketika sebuah fenomena listrik terjadi. Kedua hal ini saling berkaitan dan mempengaruhi satu sama lain dalam menghasilkan nilai besaran dari suatu aktivitas kelistrikan, yang dapat kita hitung dalam suatu persamaan atau formula. Okay daripada berlama-lama untuk pusing, mari kita bedah satu persatu.</p>
-                <br>
-                <section>
-                    <h3>Tegangan (Voltase/Volt/V)</h3>
-                    <br>
-                    <p>Tegangan, atau dapat kita sebut beda potensial adalah suatu perbedaan yang terdapat pada suatu rangkaian tertutup, atau pada sebuah komponen. Apa itu rangkaian tertutup dan komponen yang dimaksud? Rangkaian tertutup disini adalah sebuah rangkaian dimana arus listrik dapat mengalir dari titik satu ke titik lainnya. Sebagai perbedaan, terdapat rangkaian terbuka dimana rangkaiannya memiliki jalan atau bagian yang tidak terhubung, sehingga arus listrik tidak dapat mengalir di dalam rangkaian tersebut. Sedangkan komponen disini </p>
-                </section>
-            </article>
-            
 
+                <br>
+                <p>Tegangan, arus, dan hambatan merupakan elemen-elemen yang terdapat ketika sebuah fenomena listrik terjadi. Kedua hal ini saling berkaitan dan mempengaruhi satu sama lain dalam menghasilkan nilai besaran dari suatu aktivitas kelistrikan, yang dapat kita hitung dalam suatu persamaan atau formula. Baiklah daripada berlama-lama dan ujung-ujungnya menjadi pusing, mari kita bedah satu persatu.</p>
+                <br>
+
+                <section>
+                    <h3>Tegangan (satuan: volt)</h3>
+
+                    <br>
+                    <p>Tegangan, atau dapat kita sebut sebagai beda potensial, adalah suatu perbedaan yang terdapat pada suatu rangkaian tertutup antara satu titik/kutub dengan titik/kutub yang lain, yang dapat menimbulkan arus listrik. Apa itu rangkaian tertutup? Rangkaian tertutup simpelnya adalah sebuah rangkaian dimana arus listrik dapat mengalir dari satu titik ke titik lainnya. Sebagai perbedaan, terdapat rangkaian terbuka dimana rangkaiannya memiliki jalan terbuka atau bagian yang tidak terhubung, sehingga arus listrik tidak dapat mengalir melalui rangkaian tersebut. Arus listrik pada rangkaian tertutup akan muncul jika dihubungkan pada suatu sumber tegangan. Sumber tegangan merupakan suatu komponen atau perangkat yang dapat memicu perbedaan potensial (dalam hal ini tegangan), sehingga dapat memicu pergerakan arus listrik itu sendiri. Sumber tegangan yang paling sering kita jumpai sehari-hari ialah batu baterai dan generator listrik.</p>
+                    <br>
+                </section>
+
+                <section>
+                    <h3>Arus (satuan: ampere)</h3>
+
+                    <br>
+                    <p>Arus atau arus listrik merupakan aliran elektron-elektron yang terjadi karena adanya tegangan pada suatu rangkaian. Pada rangkaian yang disambungkan dengan batu baterai, arus listrik akan mengalir dari kutub negatif menuju kutub positif. Sedangkan pada generator, arah arus yang mengalir akan berbeda-beda tergantung pada jenis generatornya (AC atau DC).</p>
+                    <br>
+                </section>
+
+                <section>
+                    <h3>Hambatan (satuan: ohm)</h3>
+                    
+                    <br>
+                    <p>Hambatan ialah besarnya resistansi yang menahan aliran arus listrik pada suatu rangkaian. Resistansi ini bisa besar atau kecil nilainya, namun tidak bisa dihilangkan total, bahkan dari bahan paling konduktor sekalipun. Ini terjadi karena elektron-elektron yang mengalir pada bahan konduktor, juga bergesekan dengan atom-atom lain selama perjalanannya. Sehingga membuat keberadaan hambatan merupakan hal yang alami terjadi dan tidak bisa dihapus. Namun hambatan juga dapat ditambah ke dalam suatu rangkaian listrik kita, yaitu dengan memasang komponen kecil yang bernama resistor. Resistor merupakan komponen listrik yang berfungsi memberikan hambatan tambahan pada suatu rangkaian, sehingga arus listrik yang mengalir melaluinya dapat dikurangi. Resistor bisa jadi salah satu komponen paling penting dalam berbagai rangkaian elektronik karena dapat mencegah terjadinya kerusakan alat akibat besarnya arus listrik yang mengalir.</p>
+                    <br>
+                </section>
+
+                <p>Besar nilai dari ketiga hal ini dapat kita hitung menggunakan rumus yang terdapat pada <strong>Hukum Ohm, dimana dinyatakan bahwa besarnya arus listrik yang mengalir pada suatu bahan konduktor (semisal sebuah kawat tembaga) akan sebanding dengan tegangan yang ada pada tiap ujung bahan konduktor tersebut, asalkan suhu bahannya tetap.</strong> Semakin besar tegangan yang diberikan, maka arus pun akan semakin kuat, begitupun sebaliknya. Hal ini disebabkan oleh tegangan itu sendiri yang menjadi alasan terjadinya arus listrik.</p>
+                <br>
+                <p>Selain itu, besar arus juga akan berbanding terbalik dengan hambatan pada benda itu. Semakin tinggi hambatan atau resistansinya, maka jumlah arus akan semakin kecil. Namun jika hambatan atau resistansi bernilai kecil, jumlah arus akan membesar. Hal ini juga yang menjadi alasan mengapa kebanyakan logam seperti tembaga dapat dengan mudah menghantarkan listrik. Karena sifat atomnya yang demikian, dapat memungkinkan logam memiliki resistansi yang kecil, sehingga arus listrik mudah mengalir pada bahannya.</p>
+                <br>
+                <p>Persamaan dari Hukum Ohm dirumuskan seperti ini:</p>
+                <i class="ohm-formula">V = IR</i>
+                <p>Dimana <strong><em>I</em></strong> adalah besarnya arus listrik dalam satuan ampere, <strong><em>V</em></strong> adalah besarnya nilai tegangan dalam satuan volt, dan <strong><em>V</em></strong> mewakili besarnya hambatan pada suatu rangkaian atau bahan konduktor dengan satuan ohm.</p>
+            </article>
+
+            <article>
+                <p>Bagaimana, apakah pemahaman teman-teman tentang fenomena listrik sudah semakin kuat? Harapannya seperti itu ya:D Ilmu yang mendalam tentang listrik dapat menjadi bekal yang sangat membantu untuk teman-teman, terutama yang memiliki minat untuk fokus ke dalam bidang elektro dan perangkat keras. Penulis berharap dengan adanya artikel ini, dapat lebih menambah wawasan sehingga teman-teman mempunyai dasar yang kuat saat nanti akan mempelajari topik-topik turunannya.</p>
+            </article>
         </div>
 
         <aside>
-
-            <img src="img/profile.jpeg" alt="">
+            <h2>Tentang Penulis</h2>
+            <img class="profile-pic" src="assets/img/profile.jpeg" alt="">
 
             <section>
                 <h3>Adli Imam Suryadin</h3>
@@ -104,9 +128,9 @@
              
             <section>
                 <ul>
-                    <li><a href=""><img src="img/github.png" alt=""></a></li>
-                    <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-                    <li><a href=""><img src="img/discord.png" alt=""></a></li>
+                    <li><a href=""><img src="assets/img/github.png" alt=""></a></li>
+                    <li><a href=""><img src="assets/img/instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="assets/img/discord.png" alt=""></a></li>
                 </ul>
             </section>
         </aside>
@@ -116,5 +140,8 @@
         <p>Adli Imam Suryadin &copy; 2024, Universitas Mulawarman</p>
     </footer>
 
+    <script src="assets/scripts/script.js"></script>
+
 </body>
 </html>
+

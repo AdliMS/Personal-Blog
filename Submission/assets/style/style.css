@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    max-width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #fafafa;
+    color: black
+}
+
+body {
+    height: 100%;
+    width: 100%;
+ 
+    background-color:  #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/* HEADER */
+.navbar-header {
+    height: fit-content;
+    background-color: #fafafa;
+
+    position: sticky;
+    top: 0;
+}
+
+.navbar-header nav {
+    box-shadow: 0 2px 24px rgb(236, 236, 236);
+    width: 100%;
+    height: 6rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-header nav h1 {
+    font-size: 2rem;
+    color: #526E48;
+}
+
+.navbar-header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navbar-header nav ul li a {
+    color: #526E48;
+    text-decoration: none;
+    padding: 4px 8px ;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    transition: all 2s ease-in-out;
+}
+
+/* MAIN */
+main {
+    /* border: solid yellow 0.2rem;  */
+    display: flex;
+    width: 100%;
+    height: 100%;
+ 
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* MAIN-CONTENT */
+main #content {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    border-radius: 0.5rem;
+    padding: 4rem;
+    
+    box-shadow: 2px 2px 24px rgb(236, 236, 236);
+}
+
+main #content .main-header {
+    border-bottom: dashed black 1px;
+    padding-bottom: 2rem;
+}
+
+main #content .main-header .main-title {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+main #content .main-header .main-desc{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+main #content .first-letter:first-letter {
+    font-size: 4rem;
+    float: left;
+    margin-inline: 2rem;
+}
+
+main #content article img {
+    width: 100%;
+    margin-block: 2rem;
+}
+
+main #content article h2 {
+    font-size:2rem;
+}
+
+main #content p {
+    font-size: 1.2rem;
+}
+
+main #content article {
+    padding: 2rem;
+}
+
+main #content article section {
+    margin-block: 2rem;
+    margin-left: 4rem;
+}
+
+main #content article .ohm-formula {
+    margin-block: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN-ASIDE */
+main aside {
+    width: 20vw;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    box-shadow: 2px 2px 24px rgb(236, 236, 236);
+}
+
+main aside .profile-pic{
+    border: solid gray 4px;
+    width: 152px;
+    border-radius: 100%;
+
+    align-self: center;
+}
+
+main aside section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main aside section .job-desk{
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 300 ;
+    text-align: center;
+}
+
+main aside section h3 {
+    font-size: 1.2rem;
+    font-weight: 500 ;
+    text-align: center;
+}
+
+main aside h2 {
+    width: 100%;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: dashed black 1px;
+}
+
+main aside h3 + p {
+    font-size: small;
+    text-align: center;
+}
+
+main aside .my-quotes {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+main aside section ul {
+    list-style-type: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+main aside section ul li img {
+    width: 24px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.8rem;
+    width: 100%;
+    
+    background-color:  #fafafa;
+    box-shadow: 2px 0px 24px rgb(236, 236, 236);
+}
+
+footer p {
+    color: #526E48;
+}
+
+/* On device with 1600px screen */
+@media screen and (max-width: 1600px) {
+    /* MAIN */
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+     
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* MAIN-CONTENT */
+    main #content {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    /* MAIN-ASIDE */
+    main aside {
+        width: 65%;
+    }
+
+    main aside .profile-pic{
+        width: 12rem;
+    }
+}
+
+/* On device with 768px (tablet) */
+@media screen and (max-width: 768px) {
+    .navbar-header nav {
+        width: 100%;
+        height: 5.2rem;
+    }
+
+    .navbar-header nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-header nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    main #content .main-header .main-title {
+        font-size: 2rem;
+    }
+
+    main #content .main-header .main-desc {
+        font-size: 0.8rem;
+    }
+
+    main #content .main-header {
+        border-bottom: dashed black 1px;
+        padding-bottom: 1.2rem;
+    }
+
+    main #content p {
+        font-size: 0.8rem;
+    }
+    
+    main #content article {
+        padding: 1.2rem 0rem;
+    }
+    
+    main #content .first-letter:first-letter {
+        font-size: 2rem;
+        margin-inline: 1.2rem;
+    }
+    
+    main #content article h2 {
+        font-size: 1.2rem;
+    }
+
+    main #content article section {
+        margin-block: 1.2rem;
+        margin-left: 2rem;
+    }
+
+    main #content article .ohm-formula {
+        margin-block: 2rem;
+        font-size: 2rem;
+    }
+
+    /* MAIN-ASIDE */
+    main aside {
+        width: 65%;
+    }
+
+    main aside h2 {
+        font-size: 1.2rem;
+    }
+
+    main aside .profile-pic{
+        width: 8rem;
+    }
+
+    main aside .my-quotes {
+        font-size: 0.8rem;
+        padding-inline: 1.6rem;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 3.2rem;
+        width: 100%;
+        
+        background-color:  #fafafa;
+        box-shadow: 2px 0px 24px rgb(236, 236, 236);
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* On device with 390px (phone) */
+@media screen and (max-width: 390px) {
+
+    body {
+        gap: 2rem;
+    }
+    
+    .navbar-header nav{
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 2.8rem;
+    }
+
+    .navbar-header nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-header nav ul li a {
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+
+    main #content {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    main #content .main-header .main-title {
+        font-size: 1.2rem;
+    }
+
+    main #content .main-header .main-desc {
+        font-size: 0.4rem;
+    }
+
+    main #content .main-header {
+        border-bottom: dashed black 1px;
+        padding-bottom: 1.2rem;
+    }
+
+    main #content p {
+        font-size: 0.4rem;
+    }
+    
+    main #content article {
+        padding: 0.4rem 0rem;
+    }
+
+    main #content article img {
+        width: 100%;
+        margin-bottom: 1.2rem;
+        margin-top: 0;
+    }
+    
+    main #content .first-letter:first-letter {
+        font-size: 1.2rem;
+        margin-inline: 1.2rem;
+    }
+    
+    main #content article h2 {
+        font-size: 0.8rem;
+        
+    }
+    
+    main #content article section {
+        margin-block: 0.8rem;
+        margin-left: 1.2rem;
+    }
+    
+    main #content article section h3 {
+        font-size: 0.8rem;
+    }
+
+    main #content article .ohm-formula {
+        margin-block: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* MAIN-ASIDE */
+    main aside {
+        width: 70%;
+        gap: 1.2rem;
+    }
+
+    main aside h2 {
+        font-size: 0.8rem;
+    }
+
+    main aside .profile-pic{
+        width: 4rem;
+    }
+
+    main aside .my-quotes {
+        font-size: 0.4rem;
+        padding-inline: 1.8rem;
+    }
+
+    main aside section .job-desk{
+        font-size: 0.8rem;
+    }
+
+    main aside section h3 {
+        font-size: 0.8rem;
+    }
+
+    main aside h3 + p {
+        font-size: 0.4rem;
+    }
+
+    main aside section ul {
+        list-style-type: none;
+        
+        display: flex;
+        gap: 2rem;
+    }
+
+    main aside section ul li img {
+        width: 0.8rem;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 2rem;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.4rem;
+    }
+}
